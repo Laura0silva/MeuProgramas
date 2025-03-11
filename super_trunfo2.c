@@ -22,7 +22,7 @@ int main() {
     scanf("%s", nome1); // Lê o nome da cidade (apenas uma palavra)
 
     printf("Número de habitantes: ");
-    scanf("%d", &populacao1); // Lê um número inteiro
+    scanf("%lu", &populacao1); // Lê um número inteiro
 
     printf("A área em km²: ");
     scanf("%f", &area1); // Lê um número decimal
@@ -49,7 +49,7 @@ int main() {
     scanf("%s", nome2); // Lê o nome da cidade (apenas uma palavra)
 
     printf("Número de habitantes: ");
-    scanf("%d", &populacao2); // Lê um número inteiro
+    scanf("%lu", &populacao2); // Lê um número inteiro
 
     printf("A área em km²: ");
     scanf("%f", &area2); // Lê um número decimal
@@ -72,7 +72,7 @@ int main() {
     printf("\nEstado: %c", estado1);
     printf("\nCódigo: %3s", codigo1);
     printf("\nNome da Cidade: %s", nome1);
-    printf("\nPopulação: %d", populacao1);
+    printf("\nPopulação: %lu", populacao1);
     printf("\nÁrea: %.2f km²", area1);
     printf("\nPIB: %.2f milhões de reais", PIB1);
     printf("\nPontos Turísticos: %d", pontTurism1);
@@ -84,7 +84,7 @@ int main() {
     printf("\nEstado: %c", estado2);
     printf("\nCódigo: %s", codigo2);
     printf("\nNome da Cidade: %s", nome2);
-    printf("\nPopulação: %d", populacao2);
+    printf("\nPopulação: %lu", populacao2);
     printf("\nÁrea: %.2f km²", area2);
     printf("\nPIB: %.2f milhões de reais", PIB2);
     printf("\nPontos Turísticos: %d", pontTurism2);
@@ -108,8 +108,8 @@ int main() {
     {
     case 1:     // Se a escolha for 1, compara a população
         printf("\nAtributo: População\n");
-        printf("Carta 1: %s - %d\n", nome1, populacao1);    // Exibe nome e população da carta 1
-        printf("Carta 2: %s - %d\n", nome2, populacao2);    // Exibe nome e população da carta 2
+        printf("Carta 1: %s - %lu\n", nome1, populacao1);    // Exibe nome e população da carta 1
+        printf("Carta 2: %s - %lu\n", nome2, populacao2);    // Exibe nome e população da carta 2
         if(populacao1 > populacao2){            // Compara os valores de população
             printf("Vencedor: Carta 1\n\n!!!!");
         }
