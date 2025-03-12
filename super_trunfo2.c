@@ -114,41 +114,36 @@ int main() {
         printf("\nAtributo: População\n");
         printf("Carta 1: %s - %lu\n", nome1, populacao1);    // Exibe nome e população da carta 1
         printf("Carta 2: %s - %lu\n", nome2, populacao2);    // Exibe nome e população da carta 2
-        (populacao1 > populacao2 && populacao1 != populacao2) ? pontos1 = 1 : pontos2 = 1;
         soma1 = (float) populacao1;
         soma2 = (float) populacao2;
         break;
     case 2:     // Se a escolha for 2, compara a área
         printf("\nAtributo: Área\n");
-        printf("Carta 1: %s - %f\n", nome1, area1);     // Exibe nome e área da carta 1
-        printf("Carta 2: %s - %f\n", nome2, area2);     // Exibe nome e área da carta 2
-        (area1 > area2 && area1!= area2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 = (float) area1;
-        soma2 = (float) area2;
+        printf("Carta 1: %s - %.2f\n", nome1, area1);     // Exibe nome e área da carta 1
+        printf("Carta 2: %s - %.2f\n", nome2, area2);     // Exibe nome e área da carta 2
+        soma1 = area1;
+        soma2 = area2;
         break;
     case 3:     // Se a escolha for 3, compara o PIB
         printf("\nAtributo: PIB\n");
-        printf("Carta 1: %s - %f\n", nome1, PIB1);
-        printf("Carta 2: %s - %f\n", nome2, PIB2);
-        (PIB1 > PIB2 && PIB1 != PIB2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 = (float) PIB1;
-        soma2 = (float) PIB2;
+        printf("Carta 1: %s - %.2f\n", nome1, PIB1);
+        printf("Carta 2: %s - %.2f\n", nome2, PIB2);
+        soma1 = PIB1;
+        soma2 = PIB2;
         break;
     case 4:     // Se a escolha for 4, compara o pontos turísticos
         printf("\nAtributo: Pontos turísticos\n");
         printf("Carta 1: %s - %d\n", nome1, pontTurism1);
         printf("Carta 2: %s - %d\n", nome2, pontTurism2);
-        (pontTurism1 > pontTurism2 && pontTurism1 != pontTurism2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 = (float) pontTurism1;
-        soma2 = (float) pontTurism2;
+        soma1 = pontTurism1;
+        soma2 = pontTurism2;
         break;
     case 5:     // Se a escolha for 5, compara a densidade demográfica
         printf("\nAtributo: Densidade demográfica\n");
-        printf("Carta 1: %s - %f\n", nome1, densPopular1);
-        printf("Carta 2: %s - %f\n", nome2, densPopular2);
-        (densPopular1 < densPopular2 && densPopular1 != densPopular2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 = (float) densPopular1;
-        soma2 = (float) densPopular2;
+        printf("Carta 1: %s - %.2f\n", nome1, densPopular1);
+        printf("Carta 2: %s - %.2f\n", nome2, densPopular2);
+        soma1 = densPopular1;
+        soma2 = densPopular2;
         break;
     default:
         printf("Opção inválida!\n");
@@ -156,53 +151,53 @@ int main() {
     }
 
     if(escolha != escolha2){
-    switch (escolha)   // Verifica qual atributo foi escolhido pelo jogador
-    {
-        case 1:     // Se a escolha for 1, compara a população
-        printf("\nAtributo: População\n");
-        printf("Carta 1: %s - %lu\n", nome1, populacao1);    // Exibe nome e população da carta 1
-        printf("Carta 2: %s - %lu\n", nome2, populacao2);    // Exibe nome e população da carta 2
-        (populacao1 > populacao2 && populacao1 != populacao2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 += (float) populacao1;
-        soma2 += (float) populacao2;
-        break;
-    case 2:     // Se a escolha for 2, compara a área
-        printf("\nAtributo: Área\n");
-        printf("Carta 1: %s - %f\n", nome1, area1);     // Exibe nome e área da carta 1
-        printf("Carta 2: %s - %f\n", nome2, area2);     // Exibe nome e área da carta 2
-        (area1 > area2 && area1!= area2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 += (float) area1;
-        soma2 += (float) area2;
-        break;
-    case 3:     // Se a escolha for 3, compara o PIB
-        printf("\nAtributo: PIB\n");
-        printf("Carta 1: %s - %f\n", nome1, PIB1);
-        printf("Carta 2: %s - %f\n", nome2, PIB2);
-        (PIB1 > PIB2 && PIB1 != PIB2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 += (float) PIB1;
-        soma2 += (float) PIB2;
-        break;
-    case 4:     // Se a escolha for 4, compara o pontos turísticos
-        printf("\nAtributo: Pontos turísticos\n");
-        printf("Carta 1: %s - %d\n", nome1, pontTurism1);
-        printf("Carta 2: %s - %d\n", nome2, pontTurism2);
-        (pontTurism1 > pontTurism2 && pontTurism1 != pontTurism2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 += (float) pontTurism1;
-        soma2 += (float) pontTurism2;
-        break;
-    case 5:     // Se a escolha for 5, compara a densidade demográfica
-        printf("\nAtributo: Densidade demográfica\n");
-        printf("Carta 1: %s - %f\n", nome1, densPopular1);
-        printf("Carta 2: %s - %f\n", nome2, densPopular2);
-        (densPopular1 < densPopular2 && densPopular1 != densPopular2) ? pontos1 = 1 : pontos2 = 1;
-        soma1 += (float) densPopular1;
-        soma2 += (float) densPopular2;
-        break;
-    default:
-        printf("Opção inválida!\n");
-        break;
+        switch (escolha2)   // Verifica qual atributo foi escolhido pelo jogador
+        {
+            case 1:     // Se a escolha for 1, compara a população
+            printf("\nAtributo: População\n");
+            printf("Carta 1: %s - %lu\n", nome1, populacao1);    // Exibe nome e população da carta 1
+            printf("Carta 2: %s - %lu\n\n", nome2, populacao2);    // Exibe nome e população da carta 2
+            soma1 += (float) populacao1;
+            soma2 += (float) populacao2;
+            break;
+        case 2:     // Se a escolha for 2, compara a área
+            printf("\nAtributo: Área\n");
+            printf("Carta 1: %s - %.2f\n", nome1, area1);     // Exibe nome e área da carta 1
+            printf("Carta 2: %s - %.2f\n\n", nome2, area2);     // Exibe nome e área da carta 2
+            soma1 += area1;
+            soma2 += area2;
+            break;
+        case 3:     // Se a escolha for 3, compara o PIB
+            printf("\nAtributo: PIB\n");
+            printf("Carta 1: %s - %.2f\n", nome1, PIB1);
+            printf("Carta 2: %s - %.2f\n\n", nome2, PIB2);
+            soma1 += PIB1;
+            soma2 += PIB2;
+            break;
+        case 4:     // Se a escolha for 4, compara o pontos turísticos
+            printf("\nAtributo: Pontos turísticos\n");
+            printf("Carta 1: %s - %d\n", nome1, pontTurism1);
+            printf("Carta 2: %s - %d\n\n", nome2, pontTurism2);
+            soma1 += pontTurism1;
+            soma2 += pontTurism2;
+            break;
+        case 5:     // Se a escolha for 5, compara a densidade demográfica
+            printf("\nAtributo: Densidade demográfica\n");
+            printf("Carta 1: %s - %.2f\n", nome1, densPopular1);
+            printf("Carta 2: %s - %.2f\n\n", nome2, densPopular2);
+            soma1 += densPopular1;
+            soma2 += densPopular2;
+            break;
+        default:
+            printf("Opção inválida!\n\n");
+            break;
+        }
+        printf("Soma dos 2 atributos da carta 1: %.2f\n", soma1);
+        printf("Soma dos 2 atributos da carta 2: %.2f\n", soma2);
     }
-}
-    if()
+    if(soma1 == soma2) printf("Empate!!\n");
+    else{
+        soma1 > soma2 ? printf("Vencedor: Carta 1!!!!\n") : printf("Vencedor: Carta 2!!!!\n");
+    }
     return 0;
 }
